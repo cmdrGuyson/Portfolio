@@ -1,7 +1,7 @@
 const data = {
   githubUsername: "cmdrGuyson",
   name: "Gayanga Kuruppu",
-  designation: "Full-Stack Developer",
+  designation: "Guyson",
   avatarUrl: "/me.png",
   phone: "",
   address: "Sri Lanka, Earth",
@@ -100,8 +100,6 @@ const data = {
       desc: "Successfully completed Advanced Level Examinations with 1A and 2Bs while studying in the physical sciences field.",
     },
   ],
-  resumeUrl:
-    "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
   socialLinks: {
     instagram: "https://www.instagram.com/_guyson_/",
     linkedin: "https://linkedin.com/in/guyson",

@@ -11,7 +11,7 @@ export default function Header({ children, ...customMeta }) {
     title: "Gayanga Kuruppu",
     description: "Come drink the Kool-aid with me :)",
     icon: "/icon.png",
-    image: "/logo.png",
+    image: "/icon.png",
     type: "website",
     ...customMeta,
   };
@@ -25,10 +25,10 @@ export default function Header({ children, ...customMeta }) {
           property="og:url"
           content={`https://guyson.dev${router.asPath}`}
         />
-        <link rel="canonical" href={`https://guyson.dev${router.asPath}`} />
+        <link rel="canonical" href={`https://guyson.me${router.asPath}`} />
         <link rel="shortcut icon" href={meta.icon} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Manu Arora" />
+        <meta property="og:site_name" content="Gayanga Kuruppu" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
