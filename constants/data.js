@@ -12,7 +12,7 @@ const data = {
         "Designed and developed an environment consisting of a Raspberry Pi Smart Mirror application, mobile application and RESTful API to deliver personalized content to users based on user emotion. Performed Deep Learning by training 2 Convolutional Neural Networks to perform face identification and emotion recognition.",
       link: "https://github.com/cmdrGuyson/SmartMirror-raspberrypi",
       imgUrl: "/mirror.png",
-      stack: ["Python", "Tensorflow", "Keras", "Flask", "Java", "Firebase"],
+      stack: ["Tensorflow", "Keras", "Flask", "Firebase"],
     },
     {
       title: "Mercedes Music",
