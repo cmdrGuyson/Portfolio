@@ -65,11 +65,18 @@ const data = {
   ],
   experience: [
     {
+      title: "Senior Software Engineer",
+      place: "LucyTech - BabyJourney",
+      year: "2023",
+      link: "https://babyjourney.se/",
+      desc: "Working as a senior software engineer to build the 'Baby Journey Pregnancy App' - A modern guide for pregnant women & parents of young children",
+    },
+    {
       title: "Software Engineer",
       place: ":Different",
       year: "2021",
       link: "https://different.com.au/",
-      desc: "Working as a fullstack engineer to build the digital assistance for your home with a tech-stack consisting of NodeJS, ReactJS, ReactNative, AWS, GraphQL and Terraform.",
+      desc: "Worked as a fullstack engineer to build the digital assistance for your home with a tech-stack consisting of NodeJS, ReactJS, ReactNative, AWS, GraphQL and Terraform.",
     },
     {
       title: "Software Engineer",
