@@ -7,7 +7,7 @@ import data from "@constants/data";
 
 export default function Navbar() {
   const router = useRouter();
-  console.log(router.asPath);
+
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -29,9 +29,12 @@ export default function Navbar() {
               <h1 className="text-xl font-semibold dark:text-gray-100">
                 {data.name}
               </h1>
-              <p className="text-base font-light text-gray-500 dark:text-gray-300">
-                {data.designation}
-              </p>
+              <div className="flex flex-row gap-1 mt-1">
+                <img src="/icon.png" className="w-5 h-5" />
+                <p className="text-base font-light text-gray-500 dark:text-gray-300">
+                  {data.handle}
+                </p>
+              </div>
             </a>
           </Link>
         </div>
@@ -39,7 +42,7 @@ export default function Navbar() {
         <div className="hidden space-x-8 md:block">
           <Link href="/">
             <a
-              className={`text-base  ${
+              className={`text-base link link-underline link-underline-black ${
                 router.asPath === "/"
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
@@ -65,7 +68,7 @@ export default function Navbar() {
           </Link>
           <Link href="/projects">
             <a
-              className={`text-base  ${
+              className={`text-base link link-underline link-underline-black ${
                 router.asPath === "/projects"
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
@@ -91,7 +94,7 @@ export default function Navbar() {
           </Link>
           <Link href="/experience">
             <a
-              className={`text-base  ${
+              className={`text-base link link-underline link-underline-black ${
                 router.asPath === "/experience"
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
@@ -117,7 +120,7 @@ export default function Navbar() {
           </Link>
           <Link href="/contact">
             <a
-              className={`text-base  ${
+              className={`text-base link link-underline link-underline-black ${
                 router.asPath === "/contact"
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "

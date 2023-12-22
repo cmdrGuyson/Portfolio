@@ -1,7 +1,7 @@
 const data = {
   githubUsername: "cmdrGuyson",
   name: "Gayanga Kuruppu",
-  designation: "Guyson",
+  handle: "Guyson",
   avatarUrl: "/me.png",
   phone: "",
   address: "Sri Lanka, Earth",
@@ -73,7 +73,7 @@ const data = {
     },
     {
       title: "Senior Software Engineer",
-      place: "LucyTech - BabyJourney",
+      place: "Baby Journey",
       year: "2023",
       link: "https://babyjourney.se/",
       desc: "Worked as a senior software engineer to build the 'Baby Journey Pregnancy App' - A modern guide for pregnant women & parents of young children",

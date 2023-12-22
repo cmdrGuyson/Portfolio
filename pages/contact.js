@@ -4,7 +4,7 @@ import Contact from "../components/Contact";
 
 export default function contact() {
   return (
-    <Head>
+    <Head title="Gayanga | Contact">
       <Contact />
     </Head>
   );

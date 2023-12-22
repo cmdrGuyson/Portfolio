@@ -4,7 +4,7 @@ import Projects from "../components/Projects";
 
 export default function projects() {
   return (
-    <Head title="Gayanga">
+    <Head title="Gayanga | Projects">
       <Projects />
     </Head>
   );

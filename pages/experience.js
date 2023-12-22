@@ -4,7 +4,7 @@ import Experience from "../components/Experience";
 
 export default function experience() {
   return (
-    <Head title="My Story">
+    <Head title="Gayanga | My Story">
       <Experience />
     </Head>
   );
