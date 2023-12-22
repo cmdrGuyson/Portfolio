@@ -66,17 +66,17 @@ const data = {
   experience: [
     {
       title: "Senior Software Engineer",
-      place: "AristotleHQ",
+      place: "Aristotle",
       year: "2023",
       link: "https://aristotlehq.com/",
-      desc: "Founder-led sales copilot. Aristotle automates end-to-end outbound workflows with the power of AI",
+      desc: "A new way to follow up with your leads. Aristotle monitors your leads’ online activity and triggers personalized outreach at just the right time",
     },
     {
       title: "Senior Software Engineer",
       place: "LucyTech - BabyJourney",
       year: "2023",
       link: "https://babyjourney.se/",
-      desc: "Working as a senior software engineer to build the 'Baby Journey Pregnancy App' - A modern guide for pregnant women & parents of young children",
+      desc: "Worked as a senior software engineer to build the 'Baby Journey Pregnancy App' - A modern guide for pregnant women & parents of young children",
     },
     {
       title: "Software Engineer",
