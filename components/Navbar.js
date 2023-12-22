@@ -37,10 +37,10 @@ export default function Navbar() {
         </div>
 
         <div className="hidden space-x-8 md:block">
-          <Link href="/projects">
+          <Link href="/">
             <a
               className={`text-base  ${
-                router.asPath === "/home"
+                router.asPath === "/"
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
