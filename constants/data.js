@@ -128,7 +128,7 @@ const data = {
       place: "University of Colombo, LK",
       year: "2019",
       link: "https://cmb.ac.lk/",
-      desc: "I hated studying physics and the mediocre life I was living. I wanted to pursue computer science and software engineering. So I dropped out :p",
+      desc: "For some reason, although i loved physics, I didn't want to commit to it. I wanted to pursue computer science and software engineering. So I dropped out :p",
     },
     {
       title: "School",
