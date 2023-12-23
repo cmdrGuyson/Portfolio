@@ -48,6 +48,7 @@ const GithubRepoCard = ({ latestRepo }) => {
       <a
         href={latestRepo.clone_url}
         className="flex flex-row items-center w-full space-x-2 font-semibold group"
+        target="_blank"
       >
         <p>View Repository </p>
         <div className="transition duration-300 transform group-hover:translate-x-2">
