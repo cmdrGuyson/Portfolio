@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import data from "@constants/data";
 
 export default function Projects() {
@@ -11,16 +11,28 @@ export default function Projects() {
       </div>
 
       <div className="bg-[#F1F1F1] dark:bg-gray-900">
-        <div className="grid max-w-6xl grid-cols-1 gap-8 py-20 pb-40 mx-auto md:grid-cols-1">
+        <div className="grid max-w-2xl grid-cols-1 pt-20 mx-auto dark:bg-gray-900">
           {data.projects.map((proj, idx) => (
-            <ProjectCard
-              title={proj.title}
-              link={proj.link}
-              imgUrl={proj.imgUrl}
-              number={`${idx + 1}`}
-              description={proj.description}
-              stack={proj.stack}
-            />
+            <Fragment key={idx}>
+              <ProjectCard
+                title={proj.title}
+                link={proj.link}
+                imgUrl={proj.imgUrl}
+                description={proj.description}
+                stack={proj.stack}
+                affliation={proj.affliation}
+                affliationLink={proj.affliationLink}
+                year={proj.year}
+              />
+              {idx === data.projects.length - 1 ? null : (
+                <div className="flex flex-col items-start ml-12 -mt-2 divider-container">
+                  <div className="relative z-10 w-3 h-3 -ml-1 bg-red-500 rounded-full">
+                    <div className="relative z-10 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
+                  </div>
+                  <div className="w-1 h-24 -mt-2 bg-gray-200 rounded-full dark:bg-gray-500"></div>
+                </div>
+              )}
+            </Fragment>
           ))}
         </div>
       </div>
@@ -28,37 +40,45 @@ export default function Projects() {
   );
 }
 
-const ProjectCard = ({ title, link, imgUrl, description, stack }) => {
+const ProjectCard = ({
+  title,
+  affliationLink,
+  link,
+  imgUrl,
+  description,
+  stack,
+  year,
+  affliation,
+}) => {
   return (
-    <a href={link} className="block w-full shadow-2xl" target="_blank">
-      <div className="relative flex justify-center p-10 mx-5 transition ease-out transform rounded-lg dark:bg-gray-800 hover:scale-105 duration-2000">
-        <img
-          src={imgUrl}
-          alt="portfolio"
-          className="hidden object-contain w-32 md:block"
-        />
-        <div className="pl-10">
-          <p
-            className="px-2 text-xl font-bold bg-red-500 rounded-md text-gray-50"
-            style={{ width: "fit-content" }}
-          >
-            {title}
-          </p>
-          <p className="mt-5">{description}</p>
-          <div className="flex mt-5">
-            {stack?.length &&
-              stack.map((element, index) => (
-                <p
-                  className="px-2 mr-2 text-sm font-bold bg-gray-500 rounded-md text-gray-50"
-                  style={{ width: "fit-content" }}
-                  key={index}
-                >
-                  {element}
-                </p>
-              ))}
-          </div>
-        </div>
+    <div className="relative z-10 p-4 mx-4 bg-white border rounded-md shadow-xl experience-card dark:bg-gray-800">
+      <h1 className="absolute text-4xl font-bold text-gray-300 -top-10 md:-top-10 dark:text-gray-700 right-5">
+        {year}
+      </h1>
+      <div className="flex flex-col">
+        <a
+          className="w-auto text-xl font-semibold hover:cursor-pointer hover:underline"
+          href={link}
+          target="_blank"
+        >
+          {title}
+        </a>
+        <a
+          href={affliationLink}
+          className="text-gray-500 hover:cursor-pointer hover:underline"
+          target="_blank"
+        >
+          {affliation}
+        </a>
       </div>
-    </a>
+      <p className="my-2 leading-tight text-gray-600 whitespace-pre-line dark:text-gray-400">
+        {description}
+      </p>
+      <div className="flex flex-row flex-wrap gap-2 mt-4 max-h-200">
+        {stack.map((item) => (
+          <img key={item} src={item} className="w-auto h-5" />
+        ))}
+      </div>
+    </div>
   );
 };

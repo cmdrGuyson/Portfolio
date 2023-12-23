@@ -1,5 +1,5 @@
 import data from "@constants/data";
-import React from "react";
+import React, { Fragment } from "react";
 
 export default function Experience() {
   return (
@@ -12,9 +12,8 @@ export default function Experience() {
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
         <div className="grid max-w-xl grid-cols-1 pt-20 mx-auto dark:bg-gray-900">
           {data.experience.map((exp, idx) => (
-            <>
+            <Fragment key={idx}>
               <ExperienceCard
-                key={idx}
                 title={exp.title}
                 desc={exp.desc}
                 year={exp.year}
@@ -29,7 +28,7 @@ export default function Experience() {
                   <div className="w-1 h-24 -mt-2 bg-gray-200 rounded-full dark:bg-gray-500"></div>
                 </div>
               )}
-            </>
+            </Fragment>
           ))}
         </div>
       </div>
