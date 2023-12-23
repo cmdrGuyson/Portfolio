@@ -58,7 +58,7 @@ const data = {
     {
       title: "SmartMirror",
       affliation: "Staffordshire University - Final Year Project",
-      affliationLink: "https://www.staffs.ac.uk/",
+      affliationLink: "https://ieeexplore.ieee.org/author/37089333805",
       year: "2021",
       description:
         "Designed and developed an environment consisting of a Raspberry Pi Smart Mirror application, mobile application and RESTful API to deliver personalized content to users based on user emotion. Performed Deep Learning by training 2 Convolutional Neural Networks to perform face identification and emotion recognition.",
@@ -84,6 +84,21 @@ const data = {
         "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
         "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white",
         "https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase",
+      ],
+    },
+    {
+      title: "HealthPal",
+      affliation: "ISWEEEP Olympiad – USA",
+      affliationLink:
+        "https://www.pressreader.com/sri-lanka/sunday-times-sri-lanka/20160515/283454960593151",
+      year: "2016",
+      description:
+        "An effective health monitoring app to detect early warning signs of health deterioration. Developed a native android application that continuously monitors the user’s pulse rate and blood saturation level with the help of a pulse-oximeter and sends an alert via SMS in-case of an emergency. Awarded the silver medal in Engineering at ISWEEEP 2016 – USA",
+      link: "https://www.pressreader.com/sri-lanka/sunday-times-sri-lanka/20160515/283454960593151",
+      imgUrl: "/music.png",
+      stack: [
+        "https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white",
+        "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white",
       ],
     },
   ],
