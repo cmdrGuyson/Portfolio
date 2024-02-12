@@ -2,8 +2,26 @@ import React from "react";
 import data from "@constants/data";
 
 export default function Contact() {
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, message } = formData;
+    const mailtoLink = `mailto:gayangakuruppu@gmail.com?subject=Message%20from%20${name}&body=${message}%0D%0A%0D%0AFrom:%20${name}%20(${email})`;
+    window.location.href = mailtoLink;
+  };
+
   return (
-    <section>
+    <section className="px-4">
       <div className="h-48 max-w-6xl mx-auto mb-20 antialiased bg-white dark:bg-gray-800">
         <h1 className="py-20 text-5xl font-bold text-center md:text-9xl md:text-left">
           Contact
@@ -11,13 +29,14 @@ export default function Contact() {
       </div>
       <div className="relative z-10 max-w-6xl p-4 mx-auto mb-20 -mt-4 bg-gray-400 rounded-md shadow-md dark:bg-gray-900 md:p-10 lg:p-20">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="md:ml-4">
+          <div className="md:ml-4 h-36">
             <header className="">
               <h1 className="text-2xl font-semibold text-gray-50">
                 Howl at me!
               </h1>
-              <p className="mt-2 text-base font-light text-gray-200">
-                I know you want to ;)
+              <p className="pr-10 mt-2 text-base font-light text-gray-200">
+                Be it your company's website, personal website or your very own
+                mobile app, I'm the right crafter for you!
               </p>
             </header>
             <div className="inline-flex flex-col my-20 mb-60 icons-container"></div>
@@ -88,15 +107,19 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="flex flex-col p-4 bg-white rounded-lg form">
+          <form
+            className="flex flex-col p-4 bg-white rounded-lg form"
+            onSubmit={handleSubmit}
+          >
             <label htmlFor="name" className="mx-4 text-sm text-gray-600">
-              {" "}
               Your Name
             </label>
             <input
               type="text"
               className="px-1 py-2 mx-4 mt-2 font-light border rounded-md focus:outline-none focus:ring-2 focus:border-none ring-green-500"
               name="name"
+              value={formData.name}
+              onChange={handleChange}
             />
             <label htmlFor="email" className="mx-4 mt-4 text-sm text-gray-600">
               Email
@@ -105,6 +128,8 @@ export default function Contact() {
               type="text"
               className="px-1 py-2 mx-4 mt-2 font-light border rounded-md focus:outline-none focus:ring-2 focus:border-none ring-green-500"
               name="email"
+              value={formData.email}
+              onChange={handleChange}
             />
             <label
               htmlFor="message"
@@ -117,6 +142,8 @@ export default function Contact() {
               type="text"
               className="px-1 py-2 mx-4 mt-2 font-light border rounded-md focus:outline-none focus:ring-2 focus:border-none ring-green-500"
               name="message"
+              value={formData.message}
+              onChange={handleChange}
             ></textarea>
             <button
               type="submit"
