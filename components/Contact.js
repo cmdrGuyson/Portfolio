@@ -42,7 +42,7 @@ export default function Contact() {
                   </a>
                 </h4>
                 <iframe
-                  src="https://cal.com/guyson/30min?user=guyson&date=2024-09-18&month=2024-09"
+                  src="https://cal.com/guyson"
                   width="100%"
                   height="600"
                   frameBorder="0"
