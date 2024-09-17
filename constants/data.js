@@ -7,16 +7,31 @@ const data = {
   address: "Sri Lanka, Earth",
   projects: [
     {
+      title: "MidFunnel",
+      affliation: "MidFunnel - San Fransciso",
+      affliationLink: "https://midfunnel.com/",
+      year: "2024",
+      description:
+        "MidFunnel enables small sales teams to maintain consistent buyer engagement across their pipeline. By intelligently monitoring pipeline activity and intent signals, MidFunnel drafts timely personalized follow-ups, ensuring that your team knows exactly when and how to follow up. Whether it's following up after a sales call, keeping momentum alive in active deals, or rekindling stalled ones, MidFunnel ensures effective engagement at every stage.",
+      link: "https://midfunnel.com/",
+      imgUrl: "/mirror.png",
+      stack: [
+        "https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
+        "https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white",
+        "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white",
+      ],
+    },
+    {
       title: "Aristotle",
       affliation: "AristotleHQ - San Fransciso",
       affliationLink: "https://aristotlehq.com/",
       year: "2023",
       description:
-        "Led transformative initiatives in revolutionizing lead management with a distinct focus on leveraging AI. Instrumental in the development of an advanced email client, integrated OAuth2 for seamless connectivity to client Gmail inboxes, enabling real-time sending and receiving of emails. Implemented sophisticated email analytics, tracking opens and link clicks, and introduced advanced scheduling for optimized engagement rates. Simultaneously, played a crucial role in Aristotle's innovative AI-powered monitoring tool, which tracked and analyzed changes on designated company and lead websites, RSS feeds, LinkedIn profiles, etc, in real-time, offering users configurable signals for specific updates and timely alerts. Additionally,  contributed significantly to the messaging engine, utilizing GPT 4.0 to generate hyper-personalized messages based on enriched lead, product and other contextual data.",
+        "Led transformative initiatives in revolutionizing lead management with a distinct focus on leveraging AI.\n\nInstrumental in the development of an advanced email client, integrated OAuth2 for seamless connectivity to client Gmail inboxes, enabling real-time sending and receiving of emails.\n\nImplemented sophisticated email analytics, tracking opens and link clicks, and introduced advanced scheduling for optimized engagement rates.\n\nSimultaneously, played a crucial role in Aristotle's innovative AI-powered monitoring tool, which tracked and analyzed changes on designated company and lead websites, RSS feeds, LinkedIn profiles, etc, in real-time, offering users configurable signals for specific updates and timely alerts.\n\nAdditionally, contributed significantly to the messaging engine, utilizing GPT 4.0 to generate hyper-personalized messages based on enriched lead, product and other contextual data.",
       link: "https://aristotlehq.com/",
       imgUrl: "/mirror.png",
       stack: [
-        "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+        "https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white",
         "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white",
         "https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white",
         "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
@@ -29,7 +44,7 @@ const data = {
       affliationLink: "https://babyjourney.se/",
       year: "2023",
       description:
-        "Played a key role in shaping Sweden's leading pregnancy app, downloaded by 9 out of 10 pregnant women monthly. The app guides parents from conception to the child's second birthday, offering weekly updates, personalized features, and collaborative initiatives such as a promotional offer program with H&M. developed and maintained high-quality iOS and Android apps, collaborated with cross-functional teams, acted as a release manager, and ensured the app's stability through rigorous regression testing. Their efforts have significantly contributed to the app's popularity and impact among expecting and new parents in Sweden.",
+        "Played a key role in shaping Sweden's leading pregnancy app, downloaded by 9 out of 10 pregnant women monthly.\n\nThe app guides parents from conception to the child's second birthday, offering weekly updates, personalized features, and collaborative initiatives such as a promotional offer program with H&M.\n\nDeveloped and maintained high-quality iOS and Android apps, collaborated with cross-functional teams, acted as a release manager, and ensured the app's stability through rigorous regression testing.\n\nTheir efforts have significantly contributed to the app's popularity and impact among expecting and new parents in Sweden.",
       link: "https://babyjourney.se/",
       imgUrl: "/mirror.png",
       stack: [
@@ -44,7 +59,7 @@ const data = {
       affliationLink: "https://different.com.au/",
       year: "2022",
       description:
-        "As a full stack engineer, played a pivotal role in developing a groundbreaking Property Management as a Service platform for top agencies in Australia. Tasked with responsibilities across web, mobile, backend, and CI/CD components, optimized system functionalities via AWS Lambda migrations, implemented robust testing, and addressed vulnerabilities with fine-grained access control middleware. Contributions extended to introducing developer-centric utilities, debugging using tools like Datadog and Firebase Crashlytics, and overseeing mobile releases on both the Apple App Store and Google Play Store. Demonstrating leadership, shaped the product outline to enhance B2B functionalities, culminating in the platform winning the Proptech Most Innovative Award for Consumer Scale-up in 2022 from the Proptech Association Australia.",
+        "As a full stack engineer, played a pivotal role in developing a groundbreaking Property Management as a Service platform for top agencies in Australia.\n\nTasked with responsibilities across web, mobile, backend, and CI/CD components, optimized system functionalities via AWS Lambda migrations, implemented robust testing, and addressed vulnerabilities with fine-grained access control middleware.\n\nContributions extended to introducing developer-centric utilities, debugging using tools like Datadog and Firebase Crashlytics, and overseeing mobile releases on both the Apple App Store and Google Play Store.\n\nDemonstrating leadership, shaped the product outline to enhance B2B functionalities, culminating in the platform winning the Proptech Most Innovative Award for Consumer Scale-up in 2022 from the Proptech Association Australia.",
       link: "https://different.com.au/",
       imgUrl: "/mirror.png",
       stack: [
@@ -103,6 +118,13 @@ const data = {
     },
   ],
   experience: [
+    {
+      title: "Lead Engineer",
+      place: "MidFunnel",
+      year: "2024",
+      link: "https://midfunnel.com/",
+      desc: "Leading the engineering team at MidFunnel to develop an AI-driven solution aimed at optimizing and enhancing the efficiency of sales follow-ups.",
+    },
     {
       title: "Senior Software Engineer",
       place: "Aristotle",
