@@ -215,13 +215,13 @@ export default function Navbar() {
           Home
         </Link>
         <Link
-          href="/projects"
+          href="/blog"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
-          Projects
+          Blog
         </Link>
         <Link
-          href="/experience"
+          href="/story"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
           My Story
