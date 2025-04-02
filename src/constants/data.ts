@@ -25,28 +25,28 @@ const data = {
       place: "Baby Journey",
       year: "2023",
       link: "https://babyjourney.se/",
-      desc: "Worked as a senior software engineer to build the 'Baby Journey Pregnancy App' - A modern guide for pregnant women & parents of young children",
+      desc: "Helped build the 'Baby Journey Pregnancy App' - A modern guide for pregnant women & parents of young children",
     },
     {
       title: "Software Engineer",
       place: ":Different",
       year: "2021",
       link: "https://different.com.au/",
-      desc: "Worked as a fullstack engineer to build the digital assistance for your home with a tech-stack consisting of NodeJS, ReactJS, ReactNative, AWS, GraphQL and Terraform.",
+      desc: "Helped build a property management platform that brings transparency and innovation to an industry that desperately needed it. Winner of the Proptech Most Innovative Award for Consumer Scale-up",
     },
     {
       title: "Software Engineer",
       place: "The Alpha Nova",
       year: "2021",
       link: "https://www.linkedin.com/company/the-alpha-nova/",
-      desc: "Worked as a full-stack software developer on the commercial project GoFirst which facilitates product sampling, delivery and basic marketing data collection. While having singlehandedly developed the NodeJS backend RESTful API, was also part of the web and mobile development teams. Worked with Ionic, Angular, React, AWS and Firebase services.",
+      desc: "Built 'GoFirst' which facilitates product sampling, delivery and basic marketing data collection.",
     },
     {
       title: "BEng. Software Engineering",
       place: "Staffordshire University, UK",
       year: "2019-2021",
       link: "https://www.staffs.ac.uk/",
-      desc: "Gold Medal Winner and Valedictorian of class 2021. Admitted to the APIIT School of Computing Honour Roll in recognition of excellent academic performance in all academic years.",
+      desc: "Gold Medal Winner and Valedictorian of class 2021.",
     },
     {
       title: "Dropout",
@@ -60,7 +60,7 @@ const data = {
       place: "Nalanda College Colombo, LK",
       year: "2004-2017",
       link: "https://nalandacollege.lk/",
-      desc: "",
+      desc: "Made lifelong friends and memories.",
     },
   ],
   socialLinks: {
@@ -75,6 +75,8 @@ const data = {
         "My thoughts on why AI won't replace engineers, but engineers who use AI effectively will replace those who don't.",
       embedUrl:
         "https://www.linkedin.com/embed/feed/update/urn:li:share:7301216237575880706?collapsed=1",
+      directUrl:
+        "https://www.linkedin.com/feed/update/urn:li:share:7301216237575880706",
     },
     {
       title: "Embracing the local-first delight.",
@@ -82,6 +84,26 @@ const data = {
         "Exploring how local-first architecture can eliminate loading times and create delightful user experiences in modern web applications.",
       embedUrl:
         "https://www.linkedin.com/embed/feed/update/urn:li:share:7223365761837281281?collapsed=1",
+      directUrl:
+        "https://www.linkedin.com/feed/update/urn:li:share:7223365761837281281",
+    },
+  ],
+  contributions: [
+    {
+      title: "MidFunnel",
+      img: "/external/midfunnel.svg",
+      url: "https://midfunnel.com/",
+    },
+
+    {
+      title: "Baby Journey",
+      img: "/external/babyjourney.svg",
+      url: "https://babyjourney.se/",
+    },
+    {
+      title: ":Different",
+      img: "/external/different.svg",
+      url: "https://different.com.au/",
     },
   ],
 };

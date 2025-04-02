@@ -37,6 +37,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
+    apple: "/icon.png",
   },
   robots: {
     index: true,
@@ -60,6 +61,7 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
+          forcedTheme="dark"
         >
           <main className="flex min-h-screen flex-col">{children}</main>
         </ThemeProvider>

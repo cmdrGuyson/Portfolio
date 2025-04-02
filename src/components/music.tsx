@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Music() {
   return (
-    <div className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-50">
-      <div className="max-w-6xl mx-auto">
-        <header className="flex flex-col items-center justify-between pt-40 mx-10 md:flex-row md:my-20 lg:my-0">
-          <h1 className="max-w-lg my-20 text-6xl font-bold text-left text-gray-500 lg:text-9xl md:my-0 md:text-white dark:text-gray-600">
+    <div className="bg-[#F1F1F1] dark:bg-gray-900 py-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header className="flex flex-col items-center justify-between md:flex-row">
+          <h1 className="text-6xl font-bold text-left text-gray-500 lg:text-9xl md:text-white dark:text-gray-600">
             My Music
           </h1>
           <a
@@ -13,7 +13,7 @@ export default function Music() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex flex-row items-center px-8 py-4 mb-20 space-x-4 text-xl font-semibold bg-white rounded-md shadow-lg md:mb-0 dark:text-gray-700">
+            <div className="flex flex-row items-center px-8 py-4 space-x-4 text-xl font-semibold bg-white rounded-md shadow-lg dark:text-gray-700">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -27,7 +27,7 @@ export default function Music() {
           </a>
         </header>
 
-        <p className="mx-10 my-10">
+        <p className="mt-12">
           &ldquo;Ex Animo&rdquo; meaning &ldquo;From the heart&rdquo; is my
           first EP. It&apos;s still in the making. Until then you can listen to
           my latest single &ldquo;Fallen for you&rdquo;.
@@ -42,7 +42,7 @@ export default function Music() {
           </a>
         </p>
 
-        <div className="flex justify-center py-10 mx-10 my-20 rounded-md dark:bg-gray-800">
+        <div className="flex justify-center py-12 mt-12 rounded-md dark:bg-gray-800">
           <iframe
             width="90%"
             height="166"

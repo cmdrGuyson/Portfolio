@@ -4,7 +4,7 @@ import { RainbowHighlight } from "../animations/text-highlight";
 
 export default function Hero() {
   return (
-    <div className="flex flex-row items-start justify-center pb-56 overflow-hidden">
+    <div className="flex flex-row items-start justify-center pb-32 overflow-hidden">
       <div className="w-full mx-auto text-center md:w-1/2 md:text-left lg:p-20">
         <RoughNotationGroup show={true}>
           <RainbowHighlight color="#EF4444" type="highlight">
@@ -13,16 +13,13 @@ export default function Hero() {
             </h1>
           </RainbowHighlight>
           <p className="mt-8 text-center">
-            I&apos;m a human from Earth{" "}
-            <RoughNotation type="underline">passionate</RoughNotation> about
-            crafting software solutions to annoying problems.
+            Welcome to my corner of the web where I{" "}
+            <RoughNotation type="underline">speak my mind!</RoughNotation>{" "}
             <br />
             <br />
-            Apart from software engineering I am passionate about{" "}
-            <RoughNotation type="underline">music</RoughNotation>. Being a
-            singer/songwriter, I spend my free time working on music. I&apos;m
-            currently working on my new EP, on which you&apos;ll find more
-            information below.
+            I&apos;ve always been very passionate about crafting software
+            solutions to annoying problems and sharing my thoughts along the
+            way.
           </p>
         </RoughNotationGroup>
       </div>
