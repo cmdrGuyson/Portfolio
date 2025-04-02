@@ -3,9 +3,9 @@ import data from "../constants/data";
 
 export default function Footer() {
   return (
-    <div className="bg-[#F1F1F1] dark:bg-gray-900">
+    <div className="bg-gray-900">
       <div className="max-w-6xl px-4 py-10 mx-auto md:py-20">
-        <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
+        <div className="h-0.5 w-full bg-gray-700"></div>
         <div className="flex flex-col justify-between mt-8 space-y-4 md:space-y-0 md:flex-row md:items-center">
           <div>
             <p>&copy; Gayanga Kuruppu. All Rights Reserved.</p>
@@ -14,7 +14,7 @@ export default function Footer() {
             <a
               href={data.socialLinks.instagram}
               target="_blank"
-              className="text-base font-normal text-gray-600 dark:text-gray-300"
+              className="text-base font-normal text-gray-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ export default function Footer() {
             <a
               href={data.socialLinks.linkedin}
               target="_blank"
-              className="text-base font-normal text-gray-600 dark:text-gray-300"
+              className="text-base font-normal text-gray-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export default function Footer() {
             <a
               href={data.socialLinks.github}
               target="_blank"
-              className="text-base font-normal text-gray-600 dark:text-gray-300"
+              className="text-base font-normal text-gray-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

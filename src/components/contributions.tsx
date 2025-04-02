@@ -4,17 +4,17 @@ import Link from "next/link";
 
 export default function Contributions() {
   return (
-    <section className="bg-white dark:bg-gray-900 py-16 md:py-24">
+    <section className="bg-gray-900 py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="flex flex-col items-center justify-center text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-9xl font-bold text-gray-500 md:text-white dark:text-gray-600">
+          <h1 className="text-4xl md:text-6xl lg:text-9xl font-bold text-gray-600">
             Contributions
           </h1>
         </header>
         <p className="mt-8 md:mt-12 text-center text-base md:text-lg">
           Some of the projects I have helped build
         </p>
-        <div className="bg-[#F1F1F1] dark:bg-gray-900 mt-8 md:mt-12">
+        <div className="bg-gray-900 mt-8 md:mt-12">
           <div className="py-8 md:py-12">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 place-items-center max-w-4xl mx-auto">
               {data.contributions.map((contribution, idx) => (

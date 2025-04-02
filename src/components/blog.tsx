@@ -4,15 +4,15 @@ import Link from "next/link";
 
 export default function Blog() {
   return (
-    <section className="bg-white dark:bg-gray-800">
-      <div className="h-48 max-w-6xl mx-auto bg-white dark:bg-gray-800">
+    <section className="bg-gray-800">
+      <div className="h-48 max-w-6xl mx-auto bg-gray-800">
         <h1 className="py-20 text-5xl font-bold text-center md:text-9xl md:text-left">
           Blog
         </h1>
       </div>
-      <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
+      <div className="bg-gray-900 -mt-4">
         <div className="max-w-7xl mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
             {data.blogPosts.map((post, idx) => (
               <BlogCard
                 key={idx}
@@ -37,7 +37,7 @@ interface BlogCardProps {
 const BlogCard = ({ title, description, directUrl }: BlogCardProps) => {
   return (
     <Link href={directUrl} target="_blank" rel="noopener noreferrer">
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-xl hover:shadow-gray-200 dark:hover:shadow-gray-900 cursor-pointer h-full flex flex-col">
+      <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-xl hover:shadow-gray-900 cursor-pointer h-full flex flex-col">
         <div className="p-4 flex-grow">
           <div className="mb-2">
             <div className="flex items-start">
@@ -52,7 +52,7 @@ const BlogCard = ({ title, description, directUrl }: BlogCardProps) => {
               <h2 className="text-xl font-semibold ml-2">{title}</h2>
             </div>
           </div>
-          <p className="text-gray-600 dark:text-gray-400">{description}</p>
+          <p className="text-gray-400">{description}</p>
         </div>
       </div>
     </Link>

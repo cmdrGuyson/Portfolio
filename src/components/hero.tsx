@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="w-full mx-auto text-center md:w-1/2 md:text-left lg:p-20">
         <RoughNotationGroup show={true}>
           <RainbowHighlight color="#EF4444" type="highlight">
-            <h1 className="p-5 my-2 text-3xl md:text-4xl font-bold text-center text-white dark:text-gray-200">
+            <h1 className="p-5 my-2 text-3xl md:text-4xl font-bold text-center text-gray-200">
               Gayanga Kuruppu
             </h1>
           </RainbowHighlight>

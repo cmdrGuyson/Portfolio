@@ -28,7 +28,7 @@ export default function Navbar() {
     <div className="max-w-6xl px-4 py-10 mx-auto md:py-20">
       <div className="flex items-center justify-between md:flex-row">
         <div className="flex flex-col">
-          <Link href="/" className="text-xl font-semibold dark:text-gray-100">
+          <Link href="/" className="text-xl font-semibold text-gray-100">
             {data.name}
             <div className="flex flex-row gap-1 mt-1">
               <Image
@@ -38,7 +38,7 @@ export default function Navbar() {
                 alt="Profile icon"
                 className="w-5 h-5"
               />
-              <p className="text-base font-light text-gray-500 dark:text-gray-300">
+              <p className="text-base font-light text-gray-300">
                 {data.handle}
               </p>
             </div>
@@ -50,8 +50,8 @@ export default function Navbar() {
             href="/"
             className={`text-base link link-underline link-underline-black ${
               pathname === "/"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-400 font-bold"
+                : "text-gray-300 font-normal"
             }`}
           >
             Home
@@ -75,8 +75,8 @@ export default function Navbar() {
             href="/blog"
             className={`text-base link link-underline link-underline-black ${
               pathname === "/projects"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-400 font-bold"
+                : "text-gray-300 font-normal"
             }`}
           >
             Blog
@@ -100,8 +100,8 @@ export default function Navbar() {
             href="/story"
             className={`text-base link link-underline link-underline-black ${
               pathname === "/experience"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-400 font-bold"
+                : "text-gray-300 font-normal"
             }`}
           >
             My Story{" "}
@@ -125,8 +125,8 @@ export default function Navbar() {
             href="/contact"
             className={`text-base link link-underline link-underline-black ${
               pathname === "/contact"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-400 font-bold"
+                : "text-gray-300 font-normal"
             }`}
           >
             Contact
@@ -153,7 +153,7 @@ export default function Navbar() {
             href={data.socialLinks.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
+            className="text-base font-normal text-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@ export default function Navbar() {
             href={data.socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
+            className="text-base font-normal text-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +187,7 @@ export default function Navbar() {
             href={data.socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base font-normal text-gray-600 dark:text-gray-300"
+            className="text-base font-normal text-gray-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -202,34 +202,22 @@ export default function Navbar() {
           </a>
           {/* <DarkModeToggle
             onChange={toggleDarkMode}
-            checked={theme !== "light"}
+            checked={true}
             size={60}
           /> */}
         </div>
       </div>
       <div className="block mt-4 space-x-8 md:hidden">
-        <Link
-          href="/"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
+        <Link href="/" className="text-base font-normal text-gray-300">
           Home
         </Link>
-        <Link
-          href="/blog"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
+        <Link href="/blog" className="text-base font-normal text-gray-300">
           Blog
         </Link>
-        <Link
-          href="/story"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
+        <Link href="/story" className="text-base font-normal text-gray-300">
           My Story
         </Link>
-        <Link
-          href="/contact"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
+        <Link href="/contact" className="text-base font-normal text-gray-300">
           Contact
         </Link>
       </div>

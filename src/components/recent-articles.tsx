@@ -4,17 +4,17 @@ import Link from "next/link";
 
 export default function RecentArticles() {
   return (
-    <section className="bg-white dark:bg-gray-800 py-24">
+    <section className="bg-gray-800 py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="flex flex-col items-center justify-center text-center">
-          <h1 className="text-6xl font-bold text-gray-500 lg:text-9xl md:text-white dark:text-gray-600">
+          <h1 className="text-6xl font-bold text-gray-600 lg:text-9xl">
             Articles
           </h1>
         </header>
         <p className="mt-12 text-center">
           Recent thoughts I have written down on the internet
         </p>
-        <div className="bg-[#F1F1F1] dark:bg-gray-800 mt-12">
+        <div className="bg-gray-800 mt-12">
           <div className="py-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {data.blogPosts.map((post, idx) => (
@@ -48,7 +48,7 @@ const RecentArticle = ({
 }: RecentArticlesProps) => {
   return (
     <Link href={directUrl} target="_blank" rel="noopener noreferrer">
-      <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-xl hover:shadow-gray-200 dark:hover:shadow-gray-900 cursor-pointer h-full flex flex-col">
+      <div className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-xl hover:shadow-gray-900 cursor-pointer h-full flex flex-col">
         <div className="p-6 flex-grow">
           <div className="mb-4">
             <div className="flex items-start">
@@ -63,7 +63,7 @@ const RecentArticle = ({
               <h2 className="text-xl font-semibold ml-2">{title}</h2>
             </div>
           </div>
-          <p className="text-gray-600 dark:text-gray-400">{description}</p>
+          <p className="text-gray-400">{description}</p>
         </div>
       </div>
     </Link>

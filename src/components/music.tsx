@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Music() {
   return (
-    <div className="bg-[#F1F1F1] dark:bg-gray-900 py-24">
+    <div className="bg-gray-900 py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="flex flex-col items-center justify-between md:flex-row">
-          <h1 className="text-6xl font-bold text-left text-gray-500 lg:text-9xl md:text-white dark:text-gray-600">
+          <h1 className="text-6xl font-bold text-left lg:text-9xl text-gray-600">
             My Music
           </h1>
           <a
@@ -14,7 +14,7 @@ export default function Music() {
             rel="noopener noreferrer"
             className="mt-4 md:mt-0"
           >
-            <div className="flex flex-row items-center px-8 py-4 space-x-4 text-xl font-semibold bg-white rounded-md shadow-lg dark:text-gray-700">
+            <div className="flex flex-row items-center px-8 py-4 space-x-4 text-xl font-semibold bg-white rounded-md shadow-lg text-gray-700">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -43,7 +43,7 @@ export default function Music() {
           </a>
         </p>
 
-        <div className="flex justify-center py-12 mt-12 rounded-md dark:bg-gray-800">
+        <div className="flex justify-center py-12 mt-12 rounded-md bg-gray-800">
           <iframe
             width="90%"
             height="166"

@@ -6,12 +6,12 @@ import data from "../constants/data";
 export default function Contact() {
   return (
     <section className="px-4">
-      <div className="h-48 max-w-6xl mx-auto mb-20 antialiased bg-white dark:bg-gray-800">
+      <div className="h-48 max-w-6xl mx-auto mb-20 antialiased bg-gray-800">
         <h1 className="py-20 text-5xl font-bold text-center md:text-9xl md:text-left">
           Contact
         </h1>
       </div>
-      <div className="relative z-10 max-w-6xl p-4 mx-auto mb-20 -mt-4 bg-gray-400 rounded-md shadow-md dark:bg-gray-900 md:p-10 lg:p-20">
+      <div className="relative z-10 max-w-6xl p-4 mx-auto mb-20 -mt-4 bg-gray-900 rounded-md shadow-md md:p-10 lg:p-20">
         <div className="">
           <div className="md:ml-4">
             <header>

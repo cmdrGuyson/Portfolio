@@ -9,7 +9,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <main className="w-full dark:bg-gray-800">
+      <main className="w-full bg-gray-800">
         <Navbar />
         <div>{children}</div>
         <Footer />
