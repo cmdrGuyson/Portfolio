@@ -12,6 +12,7 @@ export default function Music() {
             href="https://soundcloud.com/gayanga-kuruppu"
             target="_blank"
             rel="noopener noreferrer"
+            className="mt-4 md:mt-0"
           >
             <div className="flex flex-row items-center px-8 py-4 space-x-4 text-xl font-semibold bg-white rounded-md shadow-lg dark:text-gray-700">
               <svg
