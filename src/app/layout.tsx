@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     images: ["/icon.png"],
   },
   icons: {
-    icon: "/icon.png",
+    icon: [{ url: "/icon.png", type: "image/png" }],
     shortcut: "/icon.png",
     apple: "/icon.png",
   },
@@ -59,7 +59,6 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
           disableTransitionOnChange
           forcedTheme="dark"
         >
