@@ -16,7 +16,7 @@ export default function Contributions() {
         </p>
         <div className="bg-gray-900 mt-8 md:mt-12">
           <div className="py-8 md:py-12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 place-items-center max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-4xl mx-auto [&>*:last-child:nth-child(3n-1)]:md:col-start-2 [&>*:last-child:nth-child(3n-2)]:md:col-span-3">
               {data.contributions.map((contribution, idx) => (
                 <ContributionLogo
                   key={idx}
@@ -40,20 +40,24 @@ interface ContributionLogoProps {
 }
 
 const ContributionLogo = ({ title, img, url }: ContributionLogoProps) => {
+  const isDifferentLogo = img.includes("different.svg");
+
   return (
     <Link
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-full aspect-[3/1] flex items-center justify-center hover:opacity-80 transition-opacity duration-200 max-w-[300px] mx-auto"
+      className={`w-full aspect-[3/1] flex items-center justify-center hover:opacity-80 transition-opacity duration-200 ${
+        isDifferentLogo ? "max-w-[200px]" : "max-w-[300px]"
+      } mx-auto`}
     >
-      <div className="relative w-full h-full p-2 md:p-4">
+      <div className="relative w-full h-full p-4">
         <Image
           src={img}
           alt={title}
           fill
           className="object-contain"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw"
         />
       </div>
     </Link>

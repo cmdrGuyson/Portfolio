@@ -90,11 +90,15 @@ const data = {
   ],
   contributions: [
     {
+      title: "InnerThread",
+      img: "/external/innerthread.svg",
+      url: "https://innerthread.app/",
+    },
+    {
       title: "MidFunnel",
       img: "/external/midfunnel.svg",
       url: "https://midfunnel.com/",
     },
-
     {
       title: "Baby Journey",
       img: "/external/babyjourney.svg",
