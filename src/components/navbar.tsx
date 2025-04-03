@@ -74,7 +74,7 @@ export default function Navbar() {
           <Link
             href="/blog"
             className={`text-base link link-underline link-underline-black ${
-              pathname === "/projects"
+              pathname === "/blog"
                 ? "text-gray-400 font-bold"
                 : "text-gray-300 font-normal"
             }`}
@@ -99,7 +99,7 @@ export default function Navbar() {
           <Link
             href="/story"
             className={`text-base link link-underline link-underline-black ${
-              pathname === "/experience"
+              pathname === "/story"
                 ? "text-gray-400 font-bold"
                 : "text-gray-300 font-normal"
             }`}

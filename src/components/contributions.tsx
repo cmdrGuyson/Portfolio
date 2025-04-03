@@ -12,7 +12,7 @@ export default function Contributions() {
           </h1>
         </header>
         <p className="mt-8 md:mt-12 text-center text-base md:text-lg">
-          Some of the projects I have helped build
+          Some of the products I have helped build
         </p>
         <div className="bg-gray-900 mt-8 md:mt-12">
           <div className="py-8 md:py-12">
